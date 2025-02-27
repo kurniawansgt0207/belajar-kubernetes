@@ -106,7 +106,7 @@ spec:
               service:
                 name: nginx-service
                 port:
-                  number: 8088
+                  number: 8080
           - path: /accepted
             pathType: Prefix
             backend:
