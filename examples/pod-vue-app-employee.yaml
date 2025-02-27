@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vue-app
+  labels:
+    app: vue-app-employee
+spec:
+  containers:
+  - name: vue-app-employee
+    image: sigitkurniawan0207/vue-app-employee:v1.0
+    ports:
+    - containerPort: 80
