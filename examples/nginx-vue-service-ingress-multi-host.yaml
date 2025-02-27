@@ -24,7 +24,7 @@ metadata:
 spec:
   containers:
   - name: nginx-custom
-    image: nginx
+    image: sigitkurniawan0207/nginx-custom:v1
     ports:
     - containerPort: 80
 
