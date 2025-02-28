@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodejs-writer-env
+  labels:
+    name: nodejs-writer-env
+spec:
+  volumes:
+    - name: html
+      emptyDir: {}
+  containers:
+    - name: nodejs-writer-env
+      image: sigitkurniawan0207/nodejs-writer
+      ports:
+        - containerPort: 3000
+      volumeMounts:
+        - mountPath: /app/folder-from-env
+          name: html
+      env:
+        - name: HTML_LOCATION
+          value: /app/folder-from-env

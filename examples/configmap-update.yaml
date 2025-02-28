@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nodejs-env-config
+data:
+  APPLICATION: Multimatics Apps v1
+  VERSION: 1.1.0
+  OWNER: IT DEPT
