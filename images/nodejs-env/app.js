@@ -10,6 +10,7 @@ const server = http.createServer((req, res) => {
     res.end(JSON.stringify({
         application: process.env.APPLICATION,
         version: process.env.VERSION,
+        owner: process.env.OWNER,
         env: process.env
     }));
 });
