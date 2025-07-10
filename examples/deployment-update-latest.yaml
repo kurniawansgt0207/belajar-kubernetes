@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-web
+  labels:
+    name: nodejs-web
+  annotations:
+    kubernetes.io/change-cause: "Initial deployment of nodejs-web latest version"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: nodejs-web
+  template:
+    metadata:
+      name: nodejs-web
+      labels:
+        name: nodejs-web
+    spec:
+      containers:
+        - name: nodejs-web
+          image: sigitkurniawan0207/nodejs-web
+          ports:
+            - containerPort: 3000
