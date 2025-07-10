@@ -1,20 +1,20 @@
 # Build image
-docker build -t khannedy/nodejs-web .
+docker build -t sigitkurniawan0207/nodejs-web:latest .
 
 # Push container
-docker push khannedy/nodejs-web
+docker push sigitkurniawan0207/nodejs-web:latest
 
 # Create container
-docker container create --name nodejs-web khannedy/nodejs-web
+#docker container create --name nodejs-web sigitkurniawan0207/nodejs-web:latest
 
 # Start container
-docker container start nodejs-web
+#docker container start nodejs-web
 
 # See container logs
-docker container logs -f nodejs-web
+#docker container logs -f nodejs-web
 
 # Stop container
-docker container stop nodejs-web
+#docker container stop nodejs-web
 
 # Remove container
-docker container rm nodejs-web
+#docker container rm nodejs-web

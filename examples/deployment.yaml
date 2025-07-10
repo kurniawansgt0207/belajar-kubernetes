@@ -4,6 +4,8 @@ metadata:
   name: nodejs-web
   labels:
     name: nodejs-web
+  annotations:
+    kubernetes.io/change-cause: "Initial deployment of nodejs-web beta version"
 spec:
   replicas: 3
   selector:
@@ -17,7 +19,7 @@ spec:
     spec:
       containers:
         - name: nodejs-web
-          image: sigitkurniawan0207/nodejs-web:1
+          image: sigitkurniawan0207/nodejs-web:beta
           ports:
             - containerPort: 3000
 
@@ -34,4 +36,4 @@ spec:
   ports:
     - port: 3000
       targetPort: 3000
-      nodePort: 30001
+      nodePort: 30010
