@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: nodejs-web
-          image: khannedy/nodejs-web:2
+          image: sigitkurniawan0207/nodejs-web:2
           ports:
             - containerPort: 3000
