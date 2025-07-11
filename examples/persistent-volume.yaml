@@ -39,7 +39,7 @@ spec:
         claimName: nodejs-writer-volume-claim
   containers:
     - name: nodejs-writer
-      image: khannedy/nodejs-writer
+      image: sigitkurniawan0207/nodejs-writer
       volumeMounts:
         - mountPath: /app/html
           name: html
