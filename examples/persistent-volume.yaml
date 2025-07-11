@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: example-pv
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce # Hanya satu pod yang bisa baca/tulis di waktu bersamaan.
+    # - ReadOnlyMany # Banyak pod bisa membaca.
+    # - ReadWriteMany # Banyak pod bisa baca/tulis bersamaan (biasanya memerlukan NFS, GlusterFS, dll).
+  hostPath:
+    path: /mnt/data
